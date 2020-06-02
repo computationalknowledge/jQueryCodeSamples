@@ -5,13 +5,18 @@
     </script> 
     <script >
     $(document).ready(function() {
-        $("h2").click(function() {
+        $("button").click(function() {
             $(this).hide();
+        });
+    }); 
+        $(document).ready(function() {
+        $("h2").click(function() {
+            $("button").show();
         });
     }); 
     </script> 
     </head>
-     
+
     <body>
     <h2> jQuery hide() example </h2> 
     <p> Code Sample by The Prof </p> 
