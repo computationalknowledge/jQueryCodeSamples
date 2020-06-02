@@ -5,22 +5,30 @@
     </script> 
     <script >
     $(document).ready(function() {
-        $("button").click(function() {
+        $("#brownbear").hide();
+        $("#brownbear").click(function() {
             $(this).hide();
+            $("#conyrabbit").show(); 
+            $("h2").show();           
+        });
+        $("#conyrabbit").click(function() {
+            $("#brownbear").show();
+            $("#conyrabbit").hide();
+            $("h2").hide();
         });
     }); 
-        $(document).ready(function() {
-        $("h2").click(function() {
-            $("button").show();
-        });
-    }); 
+
     </script> 
     </head>
 
     <body>
-    <h2> jQuery hide() example </h2> 
+    <h2> Click on the hide button and watch it disappear </h2> 
+    <h2> Click on the SHOW button and see what happens </h2> 
+    
     <p> Code Sample by The Prof </p> 
-    <h2> This is another h2 heading </h2> 
-    <button> Button </button> 
+
+    <button id="brownbear"> HIDE </button> 
+    <button id="conyrabbit"> SHOW </button> 
+    
     </body> 
     </html>
